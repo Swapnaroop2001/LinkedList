@@ -130,12 +130,13 @@ public class LinkedList {
       l.addNode(l, 30);
       l.addNode(l, 40);
       
-      l2.addNode(l2, 12345);
+      l2.addNode(l2, 1);
       l2.addNode(l2, 11);
       l2.addNode(l2, 29);
       l2.addNode(l2, 45);
 
-      l.mergeTwoSortedList(l, l2);
+      l.printLinkedlist(l);
+      l2.printLinkedlist(l2);
       
       
     }
