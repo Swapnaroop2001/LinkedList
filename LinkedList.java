@@ -130,7 +130,7 @@ public class LinkedList {
       l.addNode(l, 30);
       l.addNode(l, 40);
       
-      l2.addNode(l2, 5);
+      l2.addNode(l2, 12345);
       l2.addNode(l2, 11);
       l2.addNode(l2, 29);
       l2.addNode(l2, 45);
