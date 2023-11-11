@@ -119,6 +119,21 @@ public class LinkedList {
       ans.printLinkedlist(list2);
     }
     
+    public void removeNthNodefromLast(Node head, int n) {
+      Node curn=head;
+      Node prev=null;
+      Node next=null;
+      while(curn!=null){
+        next=curn.next;
+        curn.next=prev;
+        prev=curn;
+        curn=next;
+      }
+      for (int i = 0; i < n; i++) {
+        curn=curn.next;
+      }
+      curn.next=curn.next.next;
+    }
 
     
 
@@ -132,11 +147,6 @@ public class LinkedList {
       
       l2.addNode(l2, 1);
       l2.addNode(l2, 11);
-      l2.addNode(l2, 29);
-      l2.addNode(l2, 45);
-
-      l.printLinkedlist(l);
-      l2.printLinkedlist(l2);
       
       
     }
