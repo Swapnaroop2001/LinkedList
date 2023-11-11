@@ -137,13 +137,20 @@ public class LinkedList {
     }
 
     //Given head of linkedlist Calculate Decimal number from Binary number.
-    public void converToDecimal() {
+    public void converToDecimal(Node head) {
       Node currn=head;
       ArrayList <Integer> sum=new ArrayList<Integer>();
       while(currn!=null){
         sum.add(0,currn.data);
         currn=currn.next;
       }
+      double decimalValue=0;
+      for (int i = 0; i < sum.size(); i++) {
+        if (sum.get(i)==1) {
+          decimalValue += Math.pow(2, i);
+        }
+      }
+      System.out.println(decimalValue);
       
     }
 
@@ -151,14 +158,12 @@ public class LinkedList {
 
     public static void main(String[] args) {
       LinkedList l=new LinkedList();
-      LinkedList l2=new LinkedList();
-      l.addNode(l, 10);
-      l.addNode(l, 20);
-      l.addNode(l, 30);
-      l.addNode(l, 40);
+      l.addNode(l, 1);
+      l.addNode(l, 1);
+      l.addNode(l, 1);
+      l.addNode(l, 1);
       
-      l2.addNode(l2, 1);
-      l2.addNode(l2, 11);
+      l.converToDecimal(l.head);
       
       
     }
