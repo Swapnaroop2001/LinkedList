@@ -7,7 +7,7 @@ public class DoublyLinkedList {
     /**
      * Node
      */
-    public class Node {
+    public static class Node {
         Node prev;
         int data;
         Node next;
@@ -34,12 +34,23 @@ public class DoublyLinkedList {
     }
 
     public static void main(String[] args) {
-        DoublyLinkedList l=new DoublyLinkedList();
-        l.addNode(l, 1);
-        l.addNode(l, 2);
-        l.addNode(l, 3);
-        l.addNode(l, 4);
-        System.out.println(l.head.next.next.next.data);
+        Node a=new Node(10);
+        Node b=new Node(20);
+        Node c=new Node(30);
+        Node d=new Node(40);
+
+        a.prev=null;
+        a.next=b;
+        b.prev=a;
+        b.next=c;
+        c.prev=b;
+        c.next=d;
+        d.prev=c;
+        d.next=null;
+
+        System.out.println(a.next.next.prev.data);
+
+
     }
 
 }
