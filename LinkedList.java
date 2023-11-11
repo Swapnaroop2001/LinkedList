@@ -77,6 +77,7 @@ public class LinkedList {
       System.out.println(flag);
     }
 
+    //Reverse LinkedList
     public int reverseLinkedlist(Node h) {
       Node prev=null;
       Node head=h;
@@ -91,6 +92,7 @@ public class LinkedList {
       return prev.data;
     }
 
+    //Merge Two Sorted Lists.
     public void mergeTwoSortedList(LinkedList list1,LinkedList list2) {
       ArrayList <Integer>temp=new ArrayList<Integer>();
       int count=1;
@@ -120,6 +122,7 @@ public class LinkedList {
       ans.printLinkedlist(list2);
     }
     
+    //Remove Nth Node from last.
     public void removeNthNodefromLast(Node head, int n) {
       Node curn=head;
       Node prev=null;
