@@ -157,7 +157,6 @@ public class LinkedList {
       }
     }
     System.out.println(decimalValue);
-
   }
 
   public static void main(String[] args) {
