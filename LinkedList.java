@@ -20,15 +20,14 @@ public class LinkedList {
   }
 
   public void addNode(LinkedList l, int d) {
+    Node new_node = new Node(d);
     if (l.head == null) {
-      Node new_node = new Node(d);
       head = new_node;
     } else {
       Node curn = head;
       while (curn.next != null) {
         curn = curn.next;
       }
-      Node new_node = new Node(d);
       curn.next = new_node;
     }
   }
@@ -162,11 +161,12 @@ public class LinkedList {
   public static void main(String[] args) {
     LinkedList l = new LinkedList();
     l.addNode(l, 1);
-    l.addNode(l, 1);
-    l.addNode(l, 1);
-    l.addNode(l, 1);
+    l.addNode(l, 10);
+    l.addNode(l, 100);
+    l.addNode(l, 1000);
 
-    l.converToDecimal(l.head);
+    
 
+    System.out.println(l.head.next.next.data);
   }
 }
