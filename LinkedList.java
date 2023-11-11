@@ -1,3 +1,4 @@
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 /**
@@ -133,6 +134,17 @@ public class LinkedList {
         curn=curn.next;
       }
       curn.next=curn.next.next;
+    }
+
+    //Given head of linkedlist Calculate Decimal number from Binary number.
+    public void converToDecimal() {
+      Node currn=head;
+      ArrayList <Integer> sum=new ArrayList<Integer>();
+      while(currn!=null){
+        sum.add(0,currn.data);
+        currn=currn.next;
+      }
+      
     }
 
     
