@@ -33,6 +33,20 @@ public class DoublyLinkedList {
         }
     }
 
+    public void findLentgh(Node head) {
+        int count=1;
+        if(head==null){
+            System.out.println("LinkedList is empty");
+        }
+        else{
+            Node currn=head;
+            while(currn.next!=null){
+                count+=1;
+                currn=currn.next;
+            }
+            System.out.println(count);
+        }
+    }
     public static void main(String[] args) {
         Node a=new Node(10);
         Node b=new Node(20);
@@ -49,7 +63,16 @@ public class DoublyLinkedList {
         d.next=null;
 
         System.out.println(a.next.next.prev.data);
+        DoublyLinkedList l=new DoublyLinkedList();
+        l.addNode(l, 10);
+        l.addNode(l, 20);
+        l.addNode(l, 30);
+        l.addNode(l, 40);
+        l.addNode(l, 50);
+        l.addNode(l, 60);
+        l.addNode(l, 70);
 
+        l.findLentgh(l.head);
 
     }
 
