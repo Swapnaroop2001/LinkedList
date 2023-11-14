@@ -142,5 +142,14 @@ public class DoublyLinkedList {
 }
     public static void main(String[] args) {
         DoublyLinkedList l=new DoublyLinkedList();
+        l.addNode(l, 10);
+        l.addNode(l, 20);
+        l.addNode(l, 30);
+        l.addNode(l, 40);
+        l.addNode(l, 50);
+        l.addNode(l, 60);
+
+        
+        l.traverseBackward();
 
 }}
