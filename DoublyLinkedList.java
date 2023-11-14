@@ -151,5 +151,6 @@ public class DoublyLinkedList {
 
         
         l.traverseBackward();
+        System.out.println(l.tail.prev);
 
 }}
