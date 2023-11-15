@@ -50,11 +50,23 @@ public class DoublyLinkedList {
         }
     }
 
-    // public void getNthNode(int n) {
-    //     if (head) {
-
-    //     }
-    // }
+    public void getNthNode(int n) {
+        if (head==null) {
+            return;
+        }
+        if (n==1) {
+            System.out.println(head.data);
+        }
+        else{
+            int count=1;
+            Node curNode=head;
+            while (count<=n-1) {
+                curNode=curNode.next;
+                count+=1;
+            }
+            System.out.println(curNode.data);
+        }
+    }
 
     public void traverseForward() {
         Node current = head;
@@ -84,7 +96,8 @@ public class DoublyLinkedList {
 
         
        
-        l.traverseBackward();
+        
+        l.getNthNode(7);
 
     }
 
