@@ -164,6 +164,7 @@ public class LinkedList {
     l.addNode(l, 10);
     l.addNode(l, 100);
     l.addNode(l, 1000);
+    l.addNode(l,10000);
 
     
 
