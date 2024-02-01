@@ -5,7 +5,6 @@ import java.util.ArrayList;
  */
 public class LinkedList {
   Node head;
-
   /**
    * Node
    */
@@ -97,7 +96,6 @@ public class LinkedList {
   // Merge Two Sorted Lists.
   public void mergeTwoSortedList(LinkedList list1, LinkedList list2) {
     ArrayList<Integer> temp = new ArrayList<Integer>();
-    int count = 1;
     Node head1 = list1.head;
     Node head2 = list2.head;
     Node curr = head1;
@@ -168,6 +166,6 @@ public class LinkedList {
 
     
 
-    System.out.println(l.head.next.next.data);
+    System.out.println(l.head.next.next.next.data);
   }
 }
